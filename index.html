@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Matematika Segitiga</title>
+    <link rel="icon" href="" type="" />
+    <!-- Css untuk default dan small screen -->
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <!-- Js untuk logika penghitungan -->
+    <script src="assets/JS/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="container text__center">
+      <h1 class="text__heading">Welcome to Katik</h1>
+      <p class="text__paragraf">
+        Hai Sobat, Selamat datang di Katik :)
+        <br />
+        Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan
+        keliling bangun datar
+      </p>
+    </header>
+
+    <!-- Section Choose Segitiga & Jajar Genjang -->
+    <section class="container" style="margin-bottom: 30px">
+      <div class="button__select__rumus">
+        <h3 class="text__center">Segitiga</h3>
+      </div>
+      <div>
+        <h3 class="text__center text__blue">Jajar genjang</h3>
+      </div>
+    </section>
+    <!-- Section Choose Segitiga & Jajar Genjang -->
+
+    <!-- Section Kalkulator -->
+    <section class="container">
+      <div class="choose__rumus">
+        <div class="button__select__rumus select_rumus">
+          <h3 class="text__center">Luas Segitiga</h3>
+        </div>
+        <div class="button__select__rumus select_rumus">
+          <h3 class="text__center">Keliling Segitiga</h3>
+        </div>
+      </div>
+
+      <!-- Section Luas Segitiga -->
+      <div class="img__container">
+        <img
+          src="assets/img/Luas segitiga.webp"
+          alt="Luas Segitiga"
+          class="img__segitiga"
+          id="img__luas"
+        />
+        <img
+          src="assets/img/Keliling segitiga.webp"
+          alt="Keliling Segitiga"
+          class="img__segitiga"
+          id="img__keliling"
+        />
+      </div>
+
+      <hr />
+      <div class="form__wrapper">
+        <div id="form__luas" class="form__section">
+          <h1 class="text__heading text__center">Hitung Luas Segitiga</h1>
+
+          <!-- Component Form -->
+          <form class="form__container" id="formLuasSegitiga">
+            <label for="alas" class="form__label"></label>
+            <input
+              class="form__input"
+              type="number"
+              name="alas"
+              id="alas"
+              placeholder="Masukkan nilai alas segitiga"
+              required
+            />
+            <label for="tinggi" class="form__label"></label>
+            <input
+              class="form__input"
+              type="number"
+              name="tinggi"
+              id="tinggi"
+              placeholder="Masukkan nilai tinggi segitiga"
+              required
+            />
+
+            <center>
+              <button class="form__button" type="submit">Hitung</button>
+              <button class="form__button__reset" type="reset">Reset</button>
+            </center>
+
+            <div class="hasil__hitung__segitiga text_left">
+              <h3>
+                Hasil Luas dari Segitiga :
+                <br />
+                Rumus : 1/2 x Alas x Tinggi
+              </h3>
+              <p id="hasilLuas"></p>
+            </div>
+          </form>
+        </div>
+
+        <div id="form__keliling" class="form__section">
+          <h1 class="text__heading text__center">Hitung Keliling Segitiga</h1>
+
+          <!-- Component Form -->
+          <form class="form__container" id="formKelilingSegitiga">
+            <label for="sisi a" class="form__label">Sisi A</label>
+            <input
+              class="form__input"
+              type="number"
+              name="sisiA"
+              id="sisiA"
+              placeholder="Masukkan Sisi A segitiga"
+              required
+            />
+            <label for="sisi b" class="form__label">Sisi B</label>
+            <input
+              class="form__input"
+              type="number"
+              name="sisiB"
+              id="sisiB"
+              placeholder="Masukkan Sisi B segitiga"
+              required
+            />
+            <label for="sisi c" class="form__label">Sisi C</label>
+            <input
+              class="form__input"
+              type="number"
+              name="sisiC"
+              id="sisiC"
+              placeholder="Masukkan Sisi C segitiga"
+              required
+            />
+            <center>
+              <button class="form__button" type="submit">Hitung</button>
+              <button class="form__button__reset" type="reset">Reset</button>
+            </center>
+
+            <div class="hasil__hitung__segitiga text_left">
+              <h3>
+                Hasil Keliling dari Segitiga :
+                <br />
+                Rumus : Sisi A + Sisi B + Sisi C
+              </h3>
+              <p id="hasilKeliling"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Section Luas Segitiga -->
+    </section>
+    <!-- Section Kalkulator -->
+
+    <!-- Section Closing -->
+    <footer class="container text__center">
+      <p class="text__paragraf" style="margin-top: 25px">
+        Terima kasih telah menggunakan Katik
+        <br />
+        Semoga bermanfaat :)
+      </p>
+      <!-- Section Copyright -->
+      <div class="text__paragraf">
+        Created by Wisnu Nugroho
+        <br />
+      </div>
+      <!-- Section Copyright -->
+    </footer>
+    <!-- Section Closing -->
+  </body>
+</html>
